@@ -4,10 +4,54 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cheetahs map</title>
-	<link rel="stylesheet" href="css/leaflet.css">
-	<script src="leaflet-src.js" defer></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=en_RU"></script>
+	<style>
+		#map {
+			height: 1000px;
+		}
+	</style>
 </head>
 <body>
+
 	<h1>Cheetahs map</h1>
+	<div id="map"></div>
+
+<script type="text/javascript">
+  ymaps.ready(init);
+    var myMap,
+        kuznetsovandrey76,
+        andrei_u;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 4,
+            controls: ['zoomControl', 'fullscreenControl']
+        });
+
+        kuznetsovandrey76 = new ymaps.Placemark([57.185569, 39.396566], {
+        	hintContent: '@kuznetsovandrey76', 
+            balloonContent: 'Andrey Kuznetsov<br>UTC +3:00' 
+        }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'kuznetsovandrey76.png',
+        iconImageSize: [50, 50],
+        iconImageOffset: [-3, -42]        
+    });
+
+        andrei_u = new ymaps.Placemark([45.748900, 21.208700], {
+        	hintContent: '@andrei_u', 
+            balloonContent: 'Uzun Andrei' 
+        }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'andrei_u.png',
+        iconImageSize: [50, 50],
+        iconImageOffset: [-3, -42]        
+    });
+
+        myMap.geoObjects.add(kuznetsovandrey76);
+        myMap.geoObjects.add(andrei_u);
+    }
+</script>
 </body>
 </html>
