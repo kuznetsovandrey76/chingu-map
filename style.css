@@ -6,11 +6,10 @@ h1 {
 	color: white;
 	background: darkgreen;
 	text-align: center;
-	padding: 0.5em;
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-weight: normal;
 }
 #map {
-	height: 95vh;
+	height: 98vh;
 }
