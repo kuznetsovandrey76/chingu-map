@@ -1,7 +1,7 @@
 ymaps.ready(init);
     var myMap, campers;
-    var kuznetsovandrey76, andrei_u, sangeethasundar, lesedi, heinhoang, eightthday, alecia, 
-               curiouscc, chance, marieanabel, jose, vigneshblue, alexbass8888;
+    var kuznetsovandrey76, andrei_u, lesedi, heinhoang, eightthday, alecia, 
+               curiouscc, chance, marieanabel, jose, vigneshblue, alexbass8888, sangeethasundar;
     var size = 30;
 
 function init(){     
@@ -39,8 +39,8 @@ function init(){
          alexbass8888 = new ymaps.Placemark([19.072830, 72.882610], {hintContent: '@alexbass8888', balloonContent: 'Alex Bass'}, 
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/alexbass8888.png', iconImageSize: [size, size]});
     
-    campers = [kuznetsovandrey76, andrei_u, sangeethasundar, lesedi, heinhoang, eightthday, alecia, 
-               curiouscc, chance, marieanabel, jose, vigneshblue, alexbass8888];
+    campers = [kuznetsovandrey76, andrei_u, lesedi, heinhoang, eightthday, alecia, 
+               curiouscc, chance, marieanabel, jose, vigneshblue, alexbass8888, sangeethasundar];
 
     for (var i = 0; i < campers.length; i++) {
         myMap.geoObjects.add(campers[i]);
