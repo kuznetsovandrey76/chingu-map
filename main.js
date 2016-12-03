@@ -1,7 +1,7 @@
 ymaps.ready(init);
     var myMap, campers;
-    var kuznetsovandrey76, andrei_u, sangeethasundar, lesedi, heinhoang, eightthday, alecia, 
-               curiouscc, chance, marieanabel, jose, vigneshblue, alexbass8888;
+    var kuznetsovandrey76, andrei_u, lesedi, heinhoang, eightthday, alecia, 
+               curiouscc, chance, marieanabel, jose, vigneshblue, alexbass8888, sangeethasundar;
     var size = 30;
 
 function init(){     
@@ -16,13 +16,11 @@ function init(){
                                                                     {iconImageHref: 'img/kuznetsovandrey76.png', iconLayout: 'default#image', iconImageSize: [size, size]});
              andrei_u = new ymaps.Placemark([45.748900, 21.208700], {hintContent: '@andrei_u', balloonContent: 'Uzun Andrei'}, 
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/andrei_u.png', iconImageSize: [size, size]});
-      sangeethasundar = new ymaps.Placemark([13.085716, 80.208596], {hintContent: '@sangeethasundar', balloonContent: 'Sangeetha Sundar' }, 
-                                                                    {iconLayout: 'default#image', iconImageHref: 'img/sangeethasundar.png', iconImageSize: [size, size]});
             curiouscc = new ymaps.Placemark([51.538417, -0.009306], {hintContent: '@curiouscc', balloonContent: 'Silvana P'}, 
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/curiouscc.png', iconImageSize: [size, size]});
                lesedi = new ymaps.Placemark([-33.918861, 18.423300], {hintContent: '@lesedi', balloonContent: 'Lesedi Diamond Damane'}, 
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/lesedi.png', iconImageSize: [size, size]});
-	        heinhoang = new ymaps.Placemark([10.691048, 107.246215], {hintContent: '@heinhoang', balloonContent: 'Hein Hoang'}, 
+	          heinhoang = new ymaps.Placemark([10.691048, 107.246215], {hintContent: '@heinhoang', balloonContent: 'Hein Hoang'}, 
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/heinhoang.png', iconImageSize: [size, size]});
            eightthday = new ymaps.Placemark([52.9835189, -0.0179148], {hintContent: '@8thday', balloonContent: 'Toni Gibbons'}, 
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/eightthday.png', iconImageSize: [size, size]});
@@ -38,8 +36,10 @@ function init(){
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/vigneshblue.png', iconImageSize: [size, size]});
          alexbass8888 = new ymaps.Placemark([19.072830, 72.882610], {hintContent: '@alexbass8888', balloonContent: 'Alex Bass'}, 
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/alexbass8888.png', iconImageSize: [size, size]});
-    
-    campers = [kuznetsovandrey76, andrei_u, lesedi, heinhoang, eightthday, alecia, 
+      sangeethasundar = new ymaps.Placemark([13.085716, 80.208596], {hintContent: '@sangeethasundar', balloonContent: 'Sangeetha Sundar' }, 
+                                                                    {iconLayout: 'default#image', iconImageHref: 'img/sangeethasundar.png', iconImageSize: [size, size]});
+   
+	 campers = [kuznetsovandrey76, andrei_u, lesedi, heinhoang, eightthday, alecia, 
                curiouscc, chance, marieanabel, jose, vigneshblue, alexbass8888, sangeethasundar];
 
     for (var i = 0; i < campers.length; i++) {
