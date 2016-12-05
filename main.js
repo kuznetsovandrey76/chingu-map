@@ -1,7 +1,7 @@
 ymaps.ready(init);
     var myMap, campers;
     var kuznetsovandrey76, andrei_u, lesedi, heinhoang, eightthday, alecia, 
-               curiouscc, chance, marieanabel, jose, vigneshblue, alexbass8888, sangeethasundar;
+               curiouscc, chance, marieanabel, jose, vigneshblue, alexbass8888, sangeethasundar, ans123, jamshid;
     var size = 30;
 
 function init(){     
@@ -20,7 +20,7 @@ function init(){
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/curiouscc.png', iconImageSize: [size, size]});
                lesedi = new ymaps.Placemark([-33.918861, 18.423300], {hintContent: '@lesedi', balloonContent: 'Lesedi Diamond Damane'}, 
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/lesedi.png', iconImageSize: [size, size]});
-	          heinhoang = new ymaps.Placemark([10.691048, 107.246215], {hintContent: '@heinhoang', balloonContent: 'Hein Hoang'}, 
+	        heinhoang = new ymaps.Placemark([10.691048, 107.246215], {hintContent: '@heinhoang', balloonContent: 'Hein Hoang'}, 
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/heinhoang.png', iconImageSize: [size, size]});
            eightthday = new ymaps.Placemark([52.9835189, -0.0179148], {hintContent: '@8thday', balloonContent: 'Toni Gibbons'}, 
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/eightthday.png', iconImageSize: [size, size]});
@@ -38,9 +38,14 @@ function init(){
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/alexbass8888.png', iconImageSize: [size, size]});
       sangeethasundar = new ymaps.Placemark([13.085716, 80.208596], {hintContent: '@sangeethasundar', balloonContent: 'Sangeetha Sundar' }, 
                                                                     {iconLayout: 'default#image', iconImageHref: 'img/sangeethasundar.png', iconImageSize: [size, size]});
+     		   ans123 = new ymaps.Placemark([17.353389, 78.501972], {hintContent: '@ans123', balloonContent: 'Mansoor Ahmed' }, 
+                                                                    {iconLayout: 'default#image', iconImageHref: 'img/ans123.png', iconImageSize: [size, size]});
+     		  jamshid = new ymaps.Placemark([36.313028, 59.655861], {hintContent: '@jamshid', balloonContent: 'Jamshid Ajam' }, 
+                                                                    {iconLayout: 'default#image', iconImageHref: 'img/jamshid.png', iconImageSize: [size, size]});
+
    
 	 campers = [kuznetsovandrey76, andrei_u, lesedi, heinhoang, eightthday, alecia, 
-               curiouscc, chance, marieanabel, jose, vigneshblue, alexbass8888, sangeethasundar];
+               curiouscc, chance, marieanabel, jose, vigneshblue, alexbass8888, sangeethasundar, ans123, jamshid];
 
     for (var i = 0; i < campers.length; i++) {
         myMap.geoObjects.add(campers[i]);
