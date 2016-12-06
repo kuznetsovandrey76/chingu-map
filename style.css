@@ -2,14 +2,30 @@
 	margin: 0;
 	padding: 0;
 }
-h1 {
-	color: white;
+header {
+	height: 3vh;
 	background: darkgreen;
+}
+p {
+	color: white;
 	text-align: center;
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-weight: normal;
+	font-size: 1.8em;
 }
 #map {
-	height: 98vh;
+	height: 95vh;
+}
+ol {
+	list-style-type: none;
+	text-align: center;
+	background: black;
+	margin: 0 auto;
+	color: white;
+	height: 2vh;
+}
+footer li {
+	display: inline;
+	padding: 0 10px;
 }
