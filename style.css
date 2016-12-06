@@ -3,7 +3,6 @@
 	padding: 0;
 }
 header {
-	height: 3vh;
 	background: darkgreen;
 }
 p {
@@ -12,10 +11,11 @@ p {
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-weight: normal;
-	font-size: 1.8em;
+	font-size: 1.9em;
+	margin: 0;	
 }
 #map {
-	height: 95vh;
+	height: 100vh;
 }
 ol {
 	list-style-type: none;
@@ -23,7 +23,7 @@ ol {
 	background: black;
 	margin: 0 auto;
 	color: white;
-	height: 2vh;
+
 }
 footer li {
 	display: inline;
