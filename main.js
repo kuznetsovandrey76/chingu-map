@@ -39,9 +39,10 @@ function initMap() {
                     url: 'img/cohort/' + markersData[i].cohort + '.png',       
                     scaledSize: markerImage
                     }; 
+        var img = markersData[i].img;
         var cohort = markersData[i].cohort;
         // Добавляем маркер с информационным окном
-        addMarker(latLng, title, name, fullText, icon, cohort); 
+        addMarker(latLng, title, name, fullText, icon, cohort, img); 
     }
 
     // Изменяем стиль карты
@@ -74,7 +75,7 @@ function initMap() {
     // var markerCluster = new MarkerClusterer(map, clusterMarkers, {imagePath: 'img/m'});  
 }
 // Функция добавления маркера с информационным окном
-function addMarker(latLng, title, name, fullText, icon, cohort) {   
+function addMarker(latLng, title, name, fullText, icon, cohort, img) {   
     var markers = new google.maps.Marker({
         position: latLng,
         map: map,
@@ -90,7 +91,7 @@ function addMarker(latLng, title, name, fullText, icon, cohort) {
   
         // contentString - это переменная в которой хранится содержимое информационного окна.
         var contentString = '<div class="campersImg">' +
-                            '<img src="'+ icon.url + '" class="avatar">' +
+                            '<img src="'+ img + '" class="avatar">' +
                             // '<img src="img/' + cohort + '".png\" class=\"cohort">' +
                             '<img src="img/cohort/' + cohort + '.png" class="cohort">' +
                              '<h3>' + name + '</h3>' +
