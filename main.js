@@ -36,7 +36,7 @@ function initMap() {
         var name = markersData[i].name;
         var fullText = markersData[i].fullText;
         var icon = {
-                    url: markersData[i].img,       
+                    url: 'img/cohort/' + markersData[i].cohort + '.png',       
                     scaledSize: markerImage
                     }; 
         var cohort = markersData[i].cohort;
