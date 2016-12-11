@@ -2,6 +2,14 @@
 // тем самым делая их глобальными и теперь мы их можем использовать внутри любой функции, а не только внутри initMap, как это было раньше.
  
 var map, infoWindow, clusterMarkers = [];
+var chingu = {
+    redPanda : 0, 
+    articFox : 0, 
+    cheetah : 0, 
+    kangaroo : 0, 
+    racoon : 0, 
+    rhino : 0 
+}
   
 function initMap() {
     var markerImageSize = 30,  // Размер собственных изображений
@@ -83,7 +91,14 @@ function addMarker(latLng, title, name, fullText, icon, cohort, img) {
         icon: icon
     });
     // console.log(markers.icon);
+        (cohort == 'redPanda') ? chingu.redPanda += 1 :  (cohort == 'articFox') ? chingu.articFox += 1 :  
+        (cohort == 'cheetah') ? chingu.cheetah += 1 : (cohort == 'kangaroo') ? chingu.kangaroo += 1 :
+         (cohort == 'racoon') ? chingu.racoon += 1 : (cohort == 'rhino') ? chingu.rhino += 1 : console.log();
+        
+          
+        // console.log(cheetah);
 
+       
     // Цикл проходит по функции, добавить каждый маркер в clusterMarkers 
     var test = clusterMarkers.push(markers);
     // Отслеживаем клик по нашему маркеру
@@ -105,9 +120,12 @@ function addMarker(latLng, title, name, fullText, icon, cohort, img) {
   
         // Показываем информационное окно
         infoWindow.open(map, markers);  
+
+
+
     });    
 }
 
 
 // document.markersData.classList.add('avatar'); 
-    
+       

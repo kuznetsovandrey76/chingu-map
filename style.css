@@ -21,11 +21,26 @@ header {
 .campersImg img{
   position: relative;
 }
-  .avatar {
-    width: 70px;
-    border-radius: 50%;
-  }
-  .cohort {
-    width: 30px;
-    left: -30px;
-  }
+.avatar {
+  width: 70px;
+  border-radius: 50%;
+}
+.cohort {
+  width: 30px;
+  left: -30px;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  display: table;
+  margin: 10px auto;
+}
+footer div {
+  display: inline-block;
+}
+footer img {
+  width: 50px;
+  margin: 0 1em;
+}
+

@@ -8,7 +8,7 @@ var markersData = [
                   '&#x1F680; native Russian &#x1F6A3; learn English, German<br>' +  
                   '<span class="timezone"> UTC +3:00 </span>',   // Дополнительная информация, которая также будем выводить в информационном окне
         img: 'img/kuznetsovandrey76.jpe',  // Изменяем стиль маркера на изображение
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
 
     },
     {
@@ -18,7 +18,7 @@ var markersData = [
         name: 'Uzun Andrei',
         fullText: '',
         img: 'img/andrei_u.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 51.538417,
@@ -27,7 +27,7 @@ var markersData = [
         name: 'Silvana P',
         fullText: '',
         img: 'img/curiouscc.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: -33.918861,
@@ -36,7 +36,7 @@ var markersData = [
         name: 'Lesedi Diamond Damane',
         fullText: '',
         img: 'img/lesedi.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 10.691048,
@@ -45,7 +45,7 @@ var markersData = [
         name: 'Hein Hoang',
         fullText: '',
         img: 'img/heinhoang.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 52.9835189,
@@ -54,7 +54,7 @@ var markersData = [
         name: 'Toni Gibbons',
         fullText: '',
         img: 'img/eightthday.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 32.217700,
@@ -63,7 +63,7 @@ var markersData = [
         name: 'Alecia ###',
         fullText: '<span class="timezone">UTC -5:00</span>',
         img: 'img/alecia.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 43.464300,
@@ -72,7 +72,7 @@ var markersData = [
         name: 'Chance Taken',
         fullText: '<span class="timezone">UTC -5:00</span>',
         img: 'img/chance.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 45.748333,
@@ -81,7 +81,7 @@ var markersData = [
         name: 'Anabel Salomone',
         fullText: '',
         img: 'img/marieanabel.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
 
     {
@@ -91,7 +91,7 @@ var markersData = [
         name: 'Jose EseEme',
         fullText: '',
         img: 'img/jose.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 13.068236,
@@ -100,7 +100,7 @@ var markersData = [
         name: 'Vigneshwaran Sivalingam',
         fullText: '',
         img: 'img/vigneshblue.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 19.072830,
@@ -109,7 +109,7 @@ var markersData = [
         name: 'Alex Bass',
         fullText: '',
         img: 'img/alexbass8888.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 13.085716,
@@ -118,7 +118,7 @@ var markersData = [
         name: 'Sangeetha Sundar',
         fullText: '<span class="timezone">UTC +5:30</span>',
         img: 'img/sangeethasundar.png',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 17.353389,
@@ -127,7 +127,7 @@ var markersData = [
         name: 'Mansoor Ahmed',
         fullText: '',
         img: 'img/ans123.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 36.313028,
@@ -136,7 +136,7 @@ var markersData = [
         name: 'Jamshid Ajam',
         fullText: '',
         img: 'img/jamshid.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 51.053576,
@@ -145,7 +145,7 @@ var markersData = [
         name: 'Ivan Schwarz',
         fullText: '',
         img: 'img/ivan_schwarz.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 18.471560,
@@ -154,7 +154,7 @@ var markersData = [
         name: 'Johnny Zabala',
         fullText: '<span class="timezone">UTC -4:00</span>',
         img: 'img/johnnyzabala.jpe',
-        cohort: 'artic-fox'
+        cohort: 'articFox'
     },
     {
         lat: 18.486100,
@@ -172,7 +172,7 @@ var markersData = [
         name: 'Marko Žderić',
         fullText: '',
         img: 'img/finrodfelagund_.jpe',
-        cohort: 'cheetahs'
+        cohort: 'cheetah'
     },
     {
         lat: 45.070148,
@@ -181,9 +181,8 @@ var markersData = [
         name: 'Francesco Agnoletto',
         fullText: '',
         img: 'img/kornil.jpe',
-        cohort: 'red-panda'
+        cohort: 'redPanda'
     }
-
 ];
 
 
