@@ -5,7 +5,7 @@ var markersData = [
         title: '@kuznetsovandrey76',  // Всплывающий nickname
         name: 'Kuznetsov Andrey', // Имя, которое будем выводить в информационном окне
         fullText: 'Hello Chingu<br>' +
-                  '&#x1F680; native Russian &#x1F6A3; learn English, German<br>' +  
+                  '&#x1F680; native Russian &#x1F6A3; learn English, German<br>' +
                   '<span class="timezone"> UTC +3:00 </span>',   // Дополнительная информация, которая также будем выводить в информационном окне
         img: 'img/kuznetsovandrey76.jpe',  // Изменяем стиль маркера на изображение
         cohort: 'cheetahs'
@@ -182,8 +182,15 @@ var markersData = [
         fullText: '',
         img: 'img/kornil.jpe',
         cohort: 'red-panda'
+    },
+    {
+        lat: 40.6358423,
+        lng: -7.3921798,
+        title: '@barbosabyte',
+        name: 'André Barbosa',
+        fullText: '',
+        img: 'img/barbosabyte.jpe',
+        cohort: 'red-panda'
     }
 
 ];
-
-
