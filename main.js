@@ -39,8 +39,9 @@ function initMap() {
                     url: markersData[i].img,       
                     scaledSize: markerImage
                     }; 
+        var cohort = markersData[i].cohort;
         // Добавляем маркер с информационным окном
-        addMarker(latLng, title, name, fullText, icon); 
+        addMarker(latLng, title, name, fullText, icon, cohort); 
     }
 
     // Изменяем стиль карты
@@ -73,26 +74,31 @@ function initMap() {
     // var markerCluster = new MarkerClusterer(map, clusterMarkers, {imagePath: 'img/m'});  
 }
 // Функция добавления маркера с информационным окном
-function addMarker(latLng, title, name, fullText, icon) {   
+function addMarker(latLng, title, name, fullText, icon, cohort) {   
     var markers = new google.maps.Marker({
         position: latLng,
         map: map,
         title: title,
         icon: icon
     });
+    // console.log(markers.icon);
 
     // Цикл проходит по функции, добавить каждый маркер в clusterMarkers 
     var test = clusterMarkers.push(markers);
-  
     // Отслеживаем клик по нашему маркеру
     google.maps.event.addListener(markers, "click", function() {
   
         // contentString - это переменная в которой хранится содержимое информационного окна.
-        var contentString = '<div class="infowindow">' +
-                                '<h3>' + name + '</h3>' +
-                                '<p>' + fullText + '</p>' +
-                            '</div>';
-  
+        var contentString = '<div class="campersImg">' +
+                            '<img src="'+ icon.url + '" class="avatar">' +
+                            // '<img src="img/' + cohort + '".png\" class=\"cohort">' +
+                            '<img src="img/cohort/' + cohort + '.png" class="cohort">' +
+                             '<h3>' + name + '</h3>' +
+                            '<p>' + fullText + '</p>';
+         
+        // test contentString
+        //console.log(contentString); 
+
         // Меняем содержимое информационного окна
         infoWindow.setContent(contentString);
   
@@ -102,5 +108,5 @@ function addMarker(latLng, title, name, fullText, icon) {
 }
 
 
-
+// document.markersData.classList.add('avatar'); 
     

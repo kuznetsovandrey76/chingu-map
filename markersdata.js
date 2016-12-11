@@ -4,10 +4,12 @@ var markersData = [
         lng: 39.396566,    // Долгота
         title: '@kuznetsovandrey76',  // Всплывающий nickname
         name: 'Kuznetsov Andrey', // Имя, которое будем выводить в информационном окне
-        fullText: '<p>Hello Chingu</p>' +
-                  '<p>&#x1F680; native Russian &#x1F6A3; learn English, German</p>' +  
-                  '<p class="timezone"> UTC +3:00 </p>',   // Дополнительная информация, которая также будем выводить в информационном окне
-        img: 'img/kuznetsovandrey76.png'  // Изменяем стиль маркера на изображение
+        fullText: 'Hello Chingu<br>' +
+                  '&#x1F680; native Russian &#x1F6A3; learn English, German<br>' +  
+                  '<span class="timezone"> UTC +3:00 </span>',   // Дополнительная информация, которая также будем выводить в информационном окне
+        img: 'img/kuznetsovandrey76.jpe',  // Изменяем стиль маркера на изображение
+        cohort: 'cheetahs'
+
     },
     {
         lat: 45.748900,
@@ -15,7 +17,8 @@ var markersData = [
         title: '@andrei_u',
         name: 'Uzun Andrei',
         fullText: '',
-        img: 'img/andrei_u.png'
+        img: 'img/andrei_u.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 51.538417,
@@ -23,7 +26,8 @@ var markersData = [
         title: '@curiouscc',
         name: 'Silvana P',
         fullText: '',
-        img: 'img/curiouscc.png'
+        img: 'img/curiouscc.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: -33.918861,
@@ -31,7 +35,8 @@ var markersData = [
         title: '@lesedi',
         name: 'Lesedi Diamond Damane',
         fullText: '',
-        img: 'img/lesedi.png'
+        img: 'img/lesedi.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 10.691048,
@@ -39,7 +44,8 @@ var markersData = [
         title: 'heinhoang@',
         name: 'Hein Hoang',
         fullText: '',
-        img: 'img/heinhoang.png'
+        img: 'img/heinhoang.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 52.9835189,
@@ -47,23 +53,26 @@ var markersData = [
         title: '@eightthday',
         name: 'Toni Gibbons',
         fullText: '',
-        img: 'img/eightthday.png'
+        img: 'img/eightthday.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 32.217700,
         lng: -82.413500,
         title: '@alecia',
         name: 'Alecia ###',
-        fullText: '<p class="timezone">UTC -5:00</p>',
-        img: 'img/alecia.png'
+        fullText: '<span class="timezone">UTC -5:00</span>',
+        img: 'img/alecia.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 43.464300,
         lng: -80.520400,
         title: '@chance',
         name: 'Chance Taken',
-        fullText: '<p class="timezone">UTC -5:00</p>',
-        img: 'img/chance.png'
+        fullText: '<span class="timezone">UTC -5:00</span>',
+        img: 'img/chance.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 45.748333,
@@ -71,7 +80,8 @@ var markersData = [
         title: '@marieanabel',
         name: 'Anabel Salomone',
         fullText: '',
-        img: 'img/marieanabel.png'
+        img: 'img/marieanabel.jpe',
+        cohort: 'cheetahs'
     },
 
     {
@@ -80,7 +90,8 @@ var markersData = [
         title: '@jose',
         name: 'Jose EseEme',
         fullText: '',
-        img: 'img/jose.png'
+        img: 'img/jose.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 13.068236,
@@ -88,7 +99,8 @@ var markersData = [
         title: '@vigneshblue',
         name: 'Vigneshwaran Sivalingam',
         fullText: '',
-        img: 'img/vigneshblue.png'
+        img: 'img/vigneshblue.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 19.072830,
@@ -96,15 +108,17 @@ var markersData = [
         title: '@alexbass8888',
         name: 'Alex Bass',
         fullText: '',
-        img: 'img/alexbass8888.png'
+        img: 'img/alexbass8888.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 13.085716,
         lng: 80.208596,
         title: '@sangeethasundar',
         name: 'Sangeetha Sundar',
-        fullText: '<p class="timezone">UTC +5:30</p>',
-        img: 'img/sangeethasundar.png'
+        fullText: '<span class="timezone">UTC +5:30</span>',
+        img: 'img/sangeethasundar.png',
+        cohort: 'cheetahs'
     },
     {
         lat: 17.353389,
@@ -112,7 +126,8 @@ var markersData = [
         title: '@ans123',
         name: 'Mansoor Ahmed',
         fullText: '',
-        img: 'img/ans123.png'
+        img: 'img/ans123.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 36.313028,
@@ -120,7 +135,8 @@ var markersData = [
         title: '@jamshid',
         name: 'Jamshid Ajam',
         fullText: '',
-        img: 'img/jamshid.png'
+        img: 'img/jamshid.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 51.053576,
@@ -128,23 +144,26 @@ var markersData = [
         title: '@',
         name: 'Ivan Schwarz',
         fullText: '',
-        img: 'img/ivan_schwarz.png'
+        img: 'img/ivan_schwarz.jpe',
+        cohort: 'cheetahs'
     },
     {
         lat: 18.471560,
         lng: -69.891372,
         title: '@johnnyzabala',
         name: 'Johnny Zabala',
-        fullText: '<p class="timezone">UTC -4:00</p>',
-        img: 'img/johnnyzabala.png'
+        fullText: '<span class="timezone">UTC -4:00</span>',
+        img: 'img/johnnyzabala.jpe',
+        cohort: 'artic-fox'
     },
     {
         lat: 18.486100,
         lng: -69.931200,
         title: '@erodriguezfeliz',
         name: 'Angel Rodriguez',
-        fullText: '<p class="timezone">UTC -4:00</p>',
-        img: 'img/erodriguezfeliz.png'
+        fullText: '<span class="timezone">UTC -4:00</span>',
+        img: 'img/erodriguezfeliz.png',
+        cohort: 'rhino'
     },
     {
         lat: 45.809923,
@@ -152,7 +171,19 @@ var markersData = [
         title: '@finrodfelagund_',
         name: 'Marko Žderić',
         fullText: '',
-        img: 'img/finrodfelagund_.png'
+        img: 'img/finrodfelagund_.jpe',
+        cohort: 'cheetahs'
+    },
+    {
+        lat: 45.070148,
+        lng: 11.789544,
+        title: '@kornil',
+        name: 'Francesco Agnoletto',
+        fullText: '',
+        img: 'img/kornil.jpe',
+        cohort: 'red-panda'
     }
 
 ];
+
+

@@ -18,3 +18,14 @@ header {
 	color: green;
 	font-weight: bold;
 }
+.campersImg img{
+  position: relative;
+}
+  .avatar {
+    width: 70px;
+    border-radius: 50%;
+  }
+  .cohort {
+    width: 30px;
+    left: -30px;
+  }
