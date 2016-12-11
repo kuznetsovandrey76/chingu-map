@@ -190,5 +190,14 @@ var markersData = [
         fullText: '',
         img: 'img/barbosabyte.jpe',
         cohort: 'redPanda'
+    },
+    {
+        lat: 41.769999,
+        lng: -91.128358,
+        title: '@isaac-abrahamson',
+        name: 'Isaac Abrahamson',
+        fullText: '',
+        img: 'img/isaac-abrahamson.jpe',
+        cohort: 'redPanda'
     }
 ];
