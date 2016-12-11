@@ -1,33 +1,20 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;	
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
 }
 header {
-	background: darkgreen;
-}
-p {
-	color: white;
-	text-align: center;
-	font-family: sans-serif;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: 1.9em;
-	margin: 0;	
+  height: 15vh;
 }
 #map {
-	height: 100vh;
+  width: 100%;
+  height: 70vh;
 }
-ol {
-	list-style-type: none;
-	text-align: center;
-	background: black;
-	margin: 0 auto;
-	color: white;
-
+.timezone {
+	color: green;
+	font-weight: bold;
 }
-footer li {
-	display: inline;
-	padding: 0 10px;
-}
-
-

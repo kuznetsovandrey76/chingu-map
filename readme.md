@@ -1,1 +1,1 @@
-the cheetahs world map thing
+the Chingu world map. 

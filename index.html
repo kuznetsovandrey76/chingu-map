@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<title>Cheetahs map</title>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=en_RU"></script>
-</head>
-<body>
-	<header class="navbar-header-fluid">
-		<p>Cheetahs map</p>
-	</header>	
-	<div id="map"></div>
-	<footer class="navbar-fixed-bottom">
-		<ol>
-			<li>Cheetahs: 16</li>
-			<li>Artic Foxes: 1</li>
-			<li>Rhinos: 1</li>
-		</ol>
-	</footer>
-	<script src="main.js"></script>
-</body>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Google Map</title>
+  </head>
+  <body>
+    <header></header>
+    <div id="map"></div>
+    <script src="markersdata.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="markerclusterer.js"></script> Запасной скрипт google-markerclusterer-->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGZ8LI4eLYygl3uRy4pUzt0E0CDqfyBkQ&callback=initMap"
+        async defer></script>
+  </body>
 </html>
