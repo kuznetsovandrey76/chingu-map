@@ -190,5 +190,14 @@ var markersData = [
         fullText: '',
         img: 'img/barbosabyte.jpe',
         cohort: 'redPanda'
+    },
+    {
+        lat: -37.7080,
+        lng: 145.1150,
+        title: '@jacksonbates',
+        name: 'Jackson Bates',
+        fullText: '',
+        img: 'img/jacksonbates.jpe',
+        cohort: 'redPanda'
     }
 ];
