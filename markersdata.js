@@ -4,9 +4,8 @@ var markersData = [
         lng: 39.396566,    // Долгота
         title: '@kuznetsovandrey76',  // Всплывающий nickname
         name: 'Kuznetsov Andrey', // Имя, которое будем выводить в информационном окне
-        fullText: 'Hello Chingu<br>' +
-                  '&#x1F680; native Russian &#x1F6A3; learn English, German<br>' +
-                  '<span class="timezone"> UTC +3:00 </span>',   // Дополнительная информация, которая также будем выводить в информационном окне
+        fullText: '<span class="timezone">UTC +3:00</span>',   // Дополнительная информация, которая также будем выводить в информационном окне
+        lang: 'native: ' + ru + 'learn: ' + en + de,
         img: 'img/kuznetsovandrey76.jpe',  // Изменяем стиль маркера на изображение
         cohort: 'cheetah'
 

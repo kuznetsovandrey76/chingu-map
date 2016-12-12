@@ -43,6 +43,7 @@ function initMap() {
         var title = markersData[i].title;
         var name = markersData[i].name;
         var fullText = markersData[i].fullText;
+        var lang = markersData[i].lang;
         var icon = {
                     url: 'img/cohort/' + markersData[i].cohort + '.png',       
                     scaledSize: markerImage
@@ -50,7 +51,7 @@ function initMap() {
         var img = markersData[i].img;
         var cohort = markersData[i].cohort;
         // Добавляем маркер с информационным окном
-        addMarker(latLng, title, name, fullText, icon, cohort, img); 
+        addMarker(latLng, title, name, fullText, icon, cohort, img, lang); 
     }
 
     // Изменяем стиль карты
@@ -83,21 +84,19 @@ function initMap() {
     // var markerCluster = new MarkerClusterer(map, clusterMarkers, {imagePath: 'img/m'});  
 }
 // Функция добавления маркера с информационным окном
-function addMarker(latLng, title, name, fullText, icon, cohort, img) {   
+function addMarker(latLng, title, name, fullText, icon, cohort, img, lang) {   
     var markers = new google.maps.Marker({
         position: latLng,
         map: map,
         title: title,
         icon: icon
     });
-    // console.log(markers.icon);
+
         (cohort == 'redPanda') ? chingu.redPanda += 1 :  (cohort == 'articFox') ? chingu.articFox += 1 :  
         (cohort == 'cheetah') ? chingu.cheetah += 1 : (cohort == 'kangaroo') ? chingu.kangaroo += 1 :
-         (cohort == 'racoon') ? chingu.racoon += 1 : (cohort == 'rhino') ? chingu.rhino += 1 : console.log();
+        (cohort == 'racoon') ? chingu.racoon += 1 : (cohort == 'rhino') ? chingu.rhino += 1 : console.log();
         
-          
-        // console.log(cheetah);
-
+        (lang == undefined) ? lang = "" : lang;
        
     // Цикл проходит по функции, добавить каждый маркер в clusterMarkers 
     var test = clusterMarkers.push(markers);
@@ -110,7 +109,8 @@ function addMarker(latLng, title, name, fullText, icon, cohort, img) {
                             // '<img src="img/' + cohort + '".png\" class=\"cohort">' +
                             '<img src="img/cohort/' + cohort + '.png" class="cohort">' +
                              '<h3>' + name + '</h3>' +
-                            '<p>' + fullText + '</p>';
+                            '<p>' + fullText + '</p>' +
+                            '<p class="lang">' + lang + '</p>' ;
          
         // test contentString
         //console.log(contentString); 
