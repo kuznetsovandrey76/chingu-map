@@ -226,5 +226,14 @@ var markersData = [
         fullText: '',
         img: 'img/jacksonbates.jpe',
         cohort: 'redPanda'
+    },
+    {
+        lat: 45.392723,
+        lng: 26.321472,
+        title: '@Dante',
+        name: 'Alexandru Ungureanu',
+        fullText: '',
+        img: 'img/dante.jpg',
+        cohort: 'cheetah'
     }
 ];
