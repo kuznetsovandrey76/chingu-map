@@ -192,6 +192,15 @@ var markersData = [
         cohort: 'redPanda'
     },
     {
+        lat: 30.2366,
+        lng: -93.3774,
+        title: '@rledford',
+        name: 'Ryan Ledford',
+        fullText: '',
+        img: 'img/rledford.jpe',
+        cohort: 'redPanda'
+    },
+    {
         lat: 46.334545,
         lng: 16.614657,
         title: '@fobos531',
