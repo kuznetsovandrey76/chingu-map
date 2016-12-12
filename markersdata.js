@@ -199,5 +199,32 @@ var markersData = [
         fullText: '',
         img: 'img/rledford.jpe',
         cohort: 'redPanda'
+    },
+    {
+        lat: 46.334545,
+        lng: 16.614657,
+        title: '@fobos531',
+        name: 'Jakov Glavina',
+        fullText: '',
+        img: 'img/fobos531.jpe',
+        cohort: 'cheetah'
+    }, 
+    {
+        lat: 29.761993,
+        lng: -95.366302,
+        title: '@ali',
+        name: 'Ali C',
+        fullText: '<span class="timezone">UTC -6:00</span>',
+        img: 'img/ali.jpe',
+        cohort: 'redPanda'
+    },
+    {
+        lat: -37.7080,
+        lng: 145.1150,
+        title: '@jacksonbates',
+        name: 'Jackson Bates',
+        fullText: '',
+        img: 'img/jacksonbates.jpe',
+        cohort: 'redPanda'
     }
 ];
