@@ -190,6 +190,15 @@ var markersData = [
         fullText: '',
         img: 'img/barbosabyte.jpe',
         cohort: 'redPanda'
+    }, 
+    {
+        lat: 29.761993,
+        lng: -95.366302,
+        title: '@ali',
+        name: 'Ali C',
+        fullText: '<span class="timezone">UTC -6:00</span>',
+        img: 'img/ali.jpe',
+        cohort: 'redPanda'
     },
     {
         lat: -37.7080,
