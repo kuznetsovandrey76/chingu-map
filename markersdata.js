@@ -190,5 +190,14 @@ var markersData = [
         fullText: '',
         img: 'img/barbosabyte.jpe',
         cohort: 'redPanda'
+    },
+    {
+        lat: 46.334545,
+        lng: 16.614657,
+        title: '@fobos531',
+        name: 'Jakov Glavina',
+        fullText: '',
+        img: 'img/fobos531.jpe',
+        cohort: 'cheetah'
     }
 ];
