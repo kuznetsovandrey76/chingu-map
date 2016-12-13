@@ -191,6 +191,15 @@ var markersData = [
         cohort: 'redPanda'
     },
     {
+        lat: 41.769999,
+        lng: -91.128358,
+        title: '@isaac-abrahamson',
+        name: 'Isaac Abrahamson',
+        fullText: '',
+        img: 'img/isaac-abrahamson.jpe',
+        cohort: 'redPanda'
+    },
+    {
         lat: 30.2366,
         lng: -93.3774,
         title: '@rledford',
@@ -229,7 +238,7 @@ var markersData = [
     {
         lat: 45.392723,
         lng: 26.321472,
-        title: '@Dante',
+        title: '@dante',
         name: 'Alexandru Ungureanu',
         fullText: '',
         img: 'img/dante.jpg',
