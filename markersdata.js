@@ -4,9 +4,8 @@ var markersData = [
         lng: 39.396566,    // Долгота
         title: '@kuznetsovandrey76',  // Всплывающий nickname
         name: 'Kuznetsov Andrey', // Имя, которое будем выводить в информационном окне
-        fullText: 'Hello Chingu<br>' +
-                  '&#x1F680; native Russian &#x1F6A3; learn English, German<br>' +
-                  '<span class="timezone"> UTC +3:00 </span>',   // Дополнительная информация, которая также будем выводить в информационном окне
+        fullText: '<span class="timezone">UTC +3:00</span>',   // Дополнительная информация, которая также будем выводить в информационном окне
+        lang: 'native: ' + ru + 'learn: ' + en + de,
         img: 'img/kuznetsovandrey76.jpe',  // Изменяем стиль маркера на изображение
         cohort: 'cheetah'
 
@@ -199,5 +198,50 @@ var markersData = [
         fullText: '',
         img: 'img/isaac-abrahamson.jpe',
         cohort: 'redPanda'
+    },
+    {
+        lat: 30.2366,
+        lng: -93.3774,
+        title: '@rledford',
+        name: 'Ryan Ledford',
+        fullText: '',
+        img: 'img/rledford.jpe',
+        cohort: 'redPanda'
+    },
+    {
+        lat: 46.334545,
+        lng: 16.614657,
+        title: '@fobos531',
+        name: 'Jakov Glavina',
+        fullText: '',
+        img: 'img/fobos531.jpe',
+        cohort: 'cheetah'
+    }, 
+    {
+        lat: 29.761993,
+        lng: -95.366302,
+        title: '@ali',
+        name: 'Ali C',
+        fullText: '<span class="timezone">UTC -6:00</span>',
+        img: 'img/ali.jpe',
+        cohort: 'redPanda'
+    },
+    {
+        lat: -37.7080,
+        lng: 145.1150,
+        title: '@jacksonbates',
+        name: 'Jackson Bates',
+        fullText: '',
+        img: 'img/jacksonbates.jpe',
+        cohort: 'redPanda'
+    },
+    {
+        lat: 45.392723,
+        lng: 26.321472,
+        title: '@dante',
+        name: 'Alexandru Ungureanu',
+        fullText: '',
+        img: 'img/dante.jpg',
+        cohort: 'cheetah'
     }
 ];
