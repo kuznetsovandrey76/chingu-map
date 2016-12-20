@@ -47,4 +47,9 @@ footer img {
   padding-top: 2px;
   font-size: 1.2em;
 }
+#ajax {
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
 

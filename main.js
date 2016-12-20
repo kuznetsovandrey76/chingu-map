@@ -1,6 +1,23 @@
 // Объявляем переменные map, infoWindow, clusterMarkers за пределами функции initMap,
 // тем самым делая их глобальными и теперь мы их можем использовать внутри любой функции, а не только внутри initMap, как это было раньше.
  
+(function() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", 'data.json', true);
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4) {
+         if(xhr.status == 200) {
+            markersData = JSON.parse(xhr.responseText);  // глобальная переменная с преобразованным data.json
+             } else {
+           alert('npm install node-static -> 127.0.0.1:8080'); // вызвать обработчик ошибки с текстом ответа
+             }
+      }
+    };
+  xhr.send(null);
+})();
+
+
+
 var map, infoWindow, clusterMarkers = [];
 var chingu = {
     redPanda : 0, 
@@ -127,5 +144,8 @@ function addMarker(latLng, title, name, fullText, icon, cohort, img, lang) {
 }
 
 
-// document.markersData.classList.add('avatar'); 
-       
+
+//languages
+const ru = '<i class="em em-ru"></i> ';
+const en = '<i class="em em-us"></i> ';
+const de = '<i class="em em-de"></i> ';
