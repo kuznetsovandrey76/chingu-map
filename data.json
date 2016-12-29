@@ -228,5 +228,15 @@
 "fullText":"",
 "img":"img/dante.jpg",
 "cohort":"cheetah"
+},
+{
+"lat": 59.9343, 
+"lng": 30.3351, 
+"title": "@eugpoloz", 
+"name": "Evgenia Polozova", 
+"fullText": "<span class=\"timezone\">UTC +3:00</span><br/><br/>24, Russian, LGBTQ+, pink-haired,<br/>series & books lover, FRPG junkie,<br/>and a devoted junior front-end dev.<br/>Slack/FCC: @<strong>eugpoloz</strong>.<br/><br/>", 
+"lang": "first: <i class=\"em em-ru\"></i> speaking: <i class=\"em em-us\"></i> <i class=\"em em-es\"></i>",
+"img": "img/eugpoloz.jpg", 
+"cohort": "rhino"
 }
 ]
