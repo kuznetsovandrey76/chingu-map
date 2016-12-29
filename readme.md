@@ -22,7 +22,7 @@ Name of the image, your user name)_
 
 If you want to open the project on your computer.
 
-1. `npm instal node-static`
+1. `npm install node-static`
 2. `node server.js`
 3. `127.0.0.1:8080`
 
