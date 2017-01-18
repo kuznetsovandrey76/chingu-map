@@ -13,7 +13,7 @@
 } 
 ```
 1. change the text in brackets (remove brackets)
-Your cohort: `redPanda, articFox, cheetah, kangaroo, racoon, rhino`
+Your cohort: `redPanda, articFox, cheetah, kangaroo, racoon, rhino, alpaca, meerkat`  
 2. record changes in `data.json`
 3. add photos to the folder `img `
 _(Photo should be square, small size, in the photo there is no icon of the cohort. 
