@@ -230,13 +230,13 @@
 "cohort":"cheetah"
 },
 {
-    'lat': 41.8986040, 
-    'lng': -87.6667350, 
-    'title': '@ReeceLangerock', 
-    'name': 'Reece Langerock', 
-    'fullText': '', 
-    'img': 'img/reece.jpe', 
-    'cohort': 'redPanda'
+'lat': 41.8986040, 
+'lng': -87.6667350, 
+'title': '@ReeceLangerock', 
+'name': 'Reece Langerock', 
+'fullText': '', 
+'img': 'img/reece.jpe', 
+'cohort': 'redPanda'
 }, 
 {
 "lat": 59.9343, 
