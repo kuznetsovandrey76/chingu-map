@@ -240,12 +240,12 @@
 "cohort": "rhino"
 },
 {
-'lat': 41.8986040, 
-'lng': -87.6667350, 
-'title': '@ReeceLangerock', 
-'name': 'Reece Langerock', 
-'fullText': '', 
-'img': 'img/ReeceLangerock.jpeg', 
-'cohort': 'redPanda'
+"lat": 41.8986040, 
+"lng": -87.6667350, 
+"title": "@ReeceLangerock", 
+"name": "Reece Langerock", 
+"fullText": ", 
+"img": "img/ReeceLangerock.jpeg", 
+"cohort": "redPanda"
 }
 ]
