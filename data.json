@@ -230,15 +230,6 @@
 "cohort":"cheetah"
 },
 {
-'lat': 41.8986040, 
-'lng': -87.6667350, 
-'title': '@ReeceLangerock', 
-'name': 'Reece Langerock', 
-'fullText': '', 
-'img': 'img/reece.jpe', 
-'cohort': 'redPanda'
-}, 
-{
 "lat": 59.9343, 
 "lng": 30.3351, 
 "title": "@eugpoloz", 
@@ -247,5 +238,14 @@
 "lang": "first: <i class=\"em em-ru\"></i> speaking: <i class=\"em em-us\"></i> <i class=\"em em-es\"></i>",
 "img": "img/eugpoloz.jpg", 
 "cohort": "rhino"
+},
+{
+'lat': 41.8986040, 
+'lng': -87.6667350, 
+'title': '@ReeceLangerock', 
+'name': 'Reece Langerock', 
+'fullText': '', 
+'img': 'img/ReeceLangerock.jpeg', 
+'cohort': 'redPanda'
 }
 ]
