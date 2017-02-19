@@ -249,12 +249,12 @@
 "cohort": "redPanda"
 }
 ,{
-'lat': 48.232416, 
-'lng': -101.296016, 
-'title': '@adam4813', 
-'name': 'Adam Martin', 
-'fullText': 'any text', 
-'img': '', 
-'cohort': 'belugas'
+"lat": 48.232416, 
+"lng": -101.296016, 
+"title": "@adam4813", 
+"name": "Adam Martin", 
+"fullText": "", 
+"img": "img/adam4813.jpg", 
+"cohort": 'belugas'
 } 
 ]
