@@ -1,32 +1,19 @@
-// Объявляем переменные map, infoWindow, clusterMarkers за пределами функции initMap,
-// тем самым делая их глобальными и теперь мы их можем использовать внутри любой функции, а не только внутри initMap, как это было раньше.
- 
-(function() {
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", 'data.json', true);
-  xhr.onreadystatechange = function() {
-      if (xhr.readyState == 4) {
-         if(xhr.status == 200) {
-            markersData = JSON.parse(xhr.responseText);  // глобальная переменная с преобразованным data.json
-             } else {
-           alert('npm install node-static -> 127.0.0.1:8080'); // вызвать обработчик ошибки с текстом ответа
-             }
-      }
-    };
-  xhr.send(null);
-})();
-
-
+function loadData(url) {
+    return new Promise(function(resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url);
+        xhr.responseType = "json";
+        xhr.send();
+        xhr.onload = function() {
+            resolve(xhr.response);
+        };    
+        xhr.onerror = function() {
+            reject();
+        }
+    });
+}
 
 var map, infoWindow, clusterMarkers = [];
-var chingu = {
-    redPanda : 0, 
-    articFox : 0, 
-    cheetah : 0, 
-    kangaroo : 0, 
-    racoon : 0, 
-    rhino : 0 
-}
   
 function initMap() {
     var markerImageSize = 30,  // Размер собственных изображений
@@ -53,23 +40,31 @@ function initMap() {
         infoWindow.close();
     });
   
-    // Перебираем в цикле все координата хранящиеся в markersData
-    for (var i = 0; i < markersData.length; i++){  
+    loadData('data.json').then(    
+        // Перебираем в цикле все координата хранящиеся в markersData
+       function(markersData) {
+        for (var i = 0; i < markersData.length; i++){  
 
-        var latLng = new google.maps.LatLng(markersData[i].lat, markersData[i].lng);
-        var title = markersData[i].title;
-        var name = markersData[i].name;
-        var fullText = markersData[i].fullText;
-        var lang = markersData[i].lang;
-        var icon = {
-                    url: 'img/cohort/' + markersData[i].cohort + '.png',       
-                    scaledSize: markerImage
-                    }; 
-        var img = markersData[i].img;
-        var cohort = markersData[i].cohort;
-        // Добавляем маркер с информационным окном
-        addMarker(latLng, title, name, fullText, icon, cohort, img, lang); 
-    }
+            var latLng = new google.maps.LatLng(markersData[i].lat, markersData[i].lng);
+            var title = markersData[i].title;
+            var name = markersData[i].name;
+            var fullText = markersData[i].fullText;
+            var lang = markersData[i].lang;
+            var icon = {
+                        url: 'img/cohort/' + markersData[i].cohort + '.png',       
+                        scaledSize: markerImage
+                        }; 
+            var img = markersData[i].img;
+            var cohort = markersData[i].cohort;
+            // Добавляем маркер с информационным окном
+            addMarker(latLng, title, name, fullText, icon, cohort, img, lang); 
+        }
+        // Если закоментировать markerCluster - пропадут кластеры
+            markerCluster = new MarkerClusterer(map, clusterMarkers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+    }, function() {
+        // Эта функция сработает если будет ошибка во время loadData()
+    });
 
     // Изменяем стиль карты
     var styles = [
@@ -95,8 +90,6 @@ function initMap() {
     ];
     map.setOptions({styles: styles});
 
-    var markerCluster = new MarkerClusterer(map, clusterMarkers,
-        {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
     // img в иоей папке
     // var markerCluster = new MarkerClusterer(map, clusterMarkers, {imagePath: 'img/m'});  
 }
@@ -107,13 +100,10 @@ function addMarker(latLng, title, name, fullText, icon, cohort, img, lang) {
         map: map,
         title: title,
         icon: icon
-    });
+    });       
 
-        (cohort == 'redPanda') ? chingu.redPanda += 1 :  (cohort == 'articFox') ? chingu.articFox += 1 :  
-        (cohort == 'cheetah') ? chingu.cheetah += 1 : (cohort == 'kangaroo') ? chingu.kangaroo += 1 :
-        (cohort == 'racoon') ? chingu.racoon += 1 : (cohort == 'rhino') ? chingu.rhino += 1 : console.log();
-        
-        (lang == undefined) ? lang = "" : lang;
+    // Существует пока я не убрал инфу о языке    
+    (lang == undefined) ? lang = "" : lang;
        
     // Цикл проходит по функции, добавить каждый маркер в clusterMarkers 
     var test = clusterMarkers.push(markers);
@@ -129,23 +119,17 @@ function addMarker(latLng, title, name, fullText, icon, cohort, img, lang) {
                             '<p>' + fullText + '</p>' +
                             '<p class="lang">' + lang + '</p>' ;
          
-        // test contentString
-        //console.log(contentString); 
-
         // Меняем содержимое информационного окна
         infoWindow.setContent(contentString);
   
         // Показываем информационное окно
         infoWindow.open(map, markers);  
-
-
-
     });    
 }
-
-
 
 //languages
 const ru = '<i class="em em-ru"></i> ';
 const en = '<i class="em em-us"></i> ';
 const de = '<i class="em em-de"></i> ';
+
+
