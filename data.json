@@ -256,5 +256,14 @@
 "fullText": "", 
 "img": "img/adam4813.jpg", 
 "cohort": "beluga"
-} 
+}
+,{
+ "lat": 25.573390, 
+"lng": 85.092165, 
+"title": "@shashank7200", 
+"name": "Shashank Shekhar", 
+"fullText": "<span class=\"timezone\">UTC +5:30</span>", 
+"img": "img/shashank_shekhar.jpe", 
+"cohort": "koala"   
+}
 ]
