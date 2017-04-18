@@ -36,6 +36,7 @@ var jacksonbates = new User (-37.708, 145.115, "jacksonbates", "Jackson Bates", 
 var dante = new User (45.392723, 26.321472, "dante", "Alexandru Ungureanu", "cheetah");
 var eugpoloz = new User (59.9343, 30.3351, "eugpoloz", "Evgenia Polozova", "rhino");
 var reecelangerock = new User (41.898604, -87.666735, "reecelangerock", "Reece Langerock", "redPanda");
+var shashankshekhar = new User(25.573390,85.092165,"shashank7200","Shashank Shekhar","koala");
 
 
 
