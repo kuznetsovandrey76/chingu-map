@@ -40,7 +40,7 @@ function initMap() {
         infoWindow.close();
     });
   
-    loadData('data.json').then(    
+    loadData('js/data.json').then(    
         // Перебираем в цикле все координата хранящиеся в markersData
        function(markersData) {
         for (var i = 0; i < markersData.length; i++){  
@@ -50,14 +50,15 @@ function initMap() {
             var name = markersData[i].name;
             var fullText = markersData[i].fullText;
             var lang = markersData[i].lang;
-            var icon = {
-                        url: 'img/cohort/' + markersData[i].cohort + '.png',       
-                        scaledSize: markerImage
-                        }; 
+            // var icon = {
+            //             url: 'img/cohort/' + markersData[i].cohort + '.png',       
+            //             scaledSize: markerImage
+            //             }; 
             var img = markersData[i].img;
             var cohort = markersData[i].cohort;
             // Добавляем маркер с информационным окном
-            addMarker(latLng, title, name, fullText, icon, cohort, img, lang); 
+            // addMarker(latLng, title, name, fullText, icon, cohort, img, lang); 
+            addMarker(latLng, title, name, fullText, cohort, img, lang); 
         }
         // Если закоментировать markerCluster - пропадут кластеры
             markerCluster = new MarkerClusterer(map, clusterMarkers,
@@ -94,12 +95,13 @@ function initMap() {
     // var markerCluster = new MarkerClusterer(map, clusterMarkers, {imagePath: 'img/m'});  
 }
 // Функция добавления маркера с информационным окном
-function addMarker(latLng, title, name, fullText, icon, cohort, img, lang) {   
+// function addMarker(latLng, title, name, fullText, icon, cohort, img, lang) {   
+function addMarker(latLng, title, name, fullText, cohort, img, lang) {   
     var markers = new google.maps.Marker({
         position: latLng,
         map: map,
         title: title,
-        icon: icon
+        // icon: icon
     });       
 
     // Существует пока я не убрал инфу о языке    
@@ -114,7 +116,7 @@ function addMarker(latLng, title, name, fullText, icon, cohort, img, lang) {
         var contentString = '<div class="campersImg">' +
                             '<img src="'+ img + '" class="avatar">' +
                             // '<img src="img/' + cohort + '".png\" class=\"cohort">' +
-                            '<img src="img/cohort/' + cohort + '.png" class="cohort">' +
+                            // '<img src="img/cohort/' + cohort + '.png" class="cohort">' +
                              '<h3>' + name + '</h3>' +
                             '<p>' + fullText + '</p>' +
                             '<p class="lang">' + lang + '</p>' ;
