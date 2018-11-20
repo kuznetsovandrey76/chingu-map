@@ -1,9 +1,11 @@
 **The Chingu world map** 
 
 If you want to open the project on your computer.
-1. `npm install node-static`
-2. `node server.js`
-3. `127.0.0.1:8080`
+1. `git clone https://github.com/kuznetsovandrey76/chingu-map.git`
+2. `cd chingu-map`
+3. `npm install` - install `https://nodejs.org/en/`  
+4. `node server.js`
+5. `127.0.0.1:8080`
 
 :pencil2: If you want to add yourself to the map: 
 ```
