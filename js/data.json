@@ -1,11 +1,20 @@
 [
-{
-"lat":57.185569,
-"lng":39.396566,
-"title":"@kuznetsovandrey76",
-"name":"Kuznetsov Andrey",
-"fullText":"<span class=\"timezone\">UTC +3:00</span>",
-"lang":"native: <i class=\"em em-ru\"></i> learn: <i class=\"em em-us\"></i>",
-"img":"img/kuznetsovandrey76.jpe"
-}
+    {
+        "lat": 57.185569,
+        "lng": 39.396566,
+        "title": "@kuznetsovandrey76",
+        "name": "Kuznetsov Andrey",
+        "fullText": "<span class=\"timezone\">UTC +3:00</span>",
+        "lang": "native: <i class=\"em em-ru\"></i> learn: <i class=\"em em-us\"></i>",
+        "img": "img/kuznetsovandrey76.jpe"
+    },
+    {
+        "lat": 41.9818704,
+        "lng": 21.4484617,
+        "title": "@macesmajli",
+        "name": "Mario Krstevski",
+        "fullText": "<span class=\"timezone\">UTC +1:00</span>",
+        "lang": "native: <i class=\"em em-flag-mk\"></i> speak: <i class=\"em em-us\"></i>",
+        "img": "img/Mario-Krstevski.png"
+    }
 ]
