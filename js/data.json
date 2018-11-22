@@ -16,5 +16,14 @@
         "fullText": "<span class=\"timezone\">UTC +1:00</span>",
         "lang": "native: <i class=\"em em-flag-mk\"></i> speak: <i class=\"em em-us\"></i>",
         "img": "img/Mario-Krstevski.png"
-    }
+    },
+    {
+    'lat': 37.983810, 
+    'lng': 23.727539, 
+    'title': '@FoteiniK', 
+    'name': 'Foteini Kollia', 
+    'fullText': '<span class=\"timezone\">UTC +2:00</span>', 
+    'lang':'native: <i class="em em-flag-gr"></i>',
+    'img': 'img/FoteiniK.png'
+    } 
 ]
