@@ -10,13 +10,13 @@ If you want to open the project on your computer.
 :pencil2: If you want to add yourself to the map: 
 ```
 ,{
-    'lat': [number], 
-    'lng': [number], 
-    'title': '@[your username]', 
-    'name': '[your full name]', 
-    'fullText': 'any text', 
-    'lang':'native: <i class=\"em em-[ru]\"></i>',
-    'img': 'img/[your username].jpe'
+    "lat": [number], 
+    "lng": [number], 
+    "title": "@[your username]", 
+    "name": "[your full name]", 
+    "fullText": "any text", 
+    "lang":"native: <i class=\"em em-[ru]\"></i>",
+    "img": "img/[your username].jpe"
 } 
 ```
 
