@@ -7,7 +7,7 @@ $mail->CharSet = 'utf-8';
 $lat = $_POST['user_lat'];
 $lng = $_POST['user_lng'];
 $title = $_POST['user_title'];
-$name = $_POST[user_'name'];
+$name = $_POST['user_name'];
 $fullText = $_POST['user_fullText'];
 $lang = $_POST['user_lang'];
 $img = $_POST['user_img'];
@@ -33,13 +33,19 @@ $mail->setFrom('kuznetsovandrey76@yandex.ru');
 $mail->addAddress('and.rey.q@yandex.ru');				
 
 $mail->Subject = 'Chingu Maps';
-$body = '<b>lat:</b> ' . $lat . 
-		'<br><b>lng:</b> ' . $lng . 
-		'<br><b>title:</b> ' . $title . 
-		'<br><b>name:</b> ' . $name . 
-		'<br><b>fullText:</b> ' . $fullText . 
-		'<br><b>lang:</b> ' . $lang . 
-		'<br><b>img:</b> '. $img;
+$body = "
+<pre>
+,{
+    \"lat\": {$lat}, 
+    \"lng\": {$lng}, 
+    \"title\": \"@{$title}\", 
+    \"name\": \"{$name}\", 
+    \"fullText\": \"{$fullText}\", 
+    \"lang\": \"native: {$lang}\",
+    \"img\": \"{$img}\"
+}
+</pre>";
+
 $mail->msgHTML($body);
 $mail->AltBody = '';
 

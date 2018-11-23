@@ -29,21 +29,21 @@
 		  </span>
 		  <form action="mail.php" method="post">
 		  	<label for="lat">Latitude:</label>
-		  	<input type="text" name="user_lat" id="lat"  placeholder="57.185569">
+		  	<input type="text" name="user_lat" id="lat"  placeholder="57.185569" required>
 		  	<label for="lng">Longitude:</label>
-		  	<input type="text" name="user_lng" id="lng" placeholder="39.396566">	
+		  	<input type="text" name="user_lng" id="lng" placeholder="39.396566" required>	
 		  	<label for="title">GitHub username:</label>
-		  	<input type="text" name="user_title" id="title" placeholder="@kuznetsovandrey76">
+		  	<input type="text" name="user_title" id="title" placeholder="kuznetsovandrey76" required>
 		  	<label for="name">Full name:</label>
-		  	<input type="text" name="user_name" id="name" placeholder="Andrey Kuznetsov">	
+		  	<input type="text" name="user_name" id="name" placeholder="Andrey Kuznetsov" required>	
 		  	<label for="fullText">Your message:</label>
-		  	<input type="text" name="user_fullText" id="fullText" placeholder="Hello World :)">
+		  	<input type="text" name="user_fullText" id="fullText" placeholder="Hello World :)" required>
 		  	<label for="lang">Language:</label>
-		  	<input type="text" name="user_lang" id="lang" placeholder="russian">	
+		  	<input type="text" name="user_lang" id="lang" placeholder="russian" required>	
 		  	<label for="img">Link to your foto:</label>
-		  	<input type="text" name="user_img" id="img" placeholder="https://avatars2.githubusercontent.com/u/16838647">	
-		  	<!-- <input class="submit" type="submit" value="Add"> -->
+		  	<input type="text" name="user_img" id="img" placeholder="https://avatars2.githubusercontent.com/u/16838647" required>	
 		  	<button type="submit" class="submit">Add</button>
+		  	<p>* I'll get a message with your details and add you <span>later</span></p>
 		</form>
 		</div>
 
