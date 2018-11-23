@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <title>CHINGU Map</title>
+  </head>
+  <body>
+
+    <header class="header">
+    	<img class="header-img" src="img/chingu.png">
+        <p class="header-title"><span>Chingu</span> Map</p>
+    </header>
+
+    <section class="section">  
+      <div id="map" class="section-map"></div>
+      <div class="section-form">
+      	<div id="login-button" class="section-form__login-button">
+		  <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+		  </img>
+		</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+    <a class="footer-link" href="https://github.com/kuznetsovandrey76/chingu-map">GitHub repo</a>      
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGZ8LI4eLYygl3uRy4pUzt0E0CDqfyBkQ&callback=initMap"></script>
+
+    <script type="text/javascript">
+		$('#login-button').click(function(){
+			document.location.href = "https://ka76-chingu-map.herokuapp.com/";
+		});
+    </script>
+  </body>
+</html>
