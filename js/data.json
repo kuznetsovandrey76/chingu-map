@@ -25,14 +25,23 @@
         "fullText": "<span class=\"timezone\">UTC +2:00</span>", 
         "lang":"native: <i class=\"em em-flag-gr\"></i>",
         "img": "img/FoteiniK.png"
-    } ,
+    },
     {
-    "lat": 40.8448,
-    "lng": -73.8648,
-    "title": "@withcheesepls",
-    "name": "<a href='https://josuerojasrojas.github.io'>Josue Rojas</a>",
-    "fullText": "Hello!",
-    "lang": "native: <i class=\"em em-us\"></i>",
-    "img": "https://avatars0.githubusercontent.com/u/10749061"
+        "lat": 40.8448,
+        "lng": -73.8648,
+        "title": "@withcheesepls",
+        "name": "<a href='https://josuerojasrojas.github.io'>Josue Rojas</a>",
+        "fullText": "Hello!",
+        "lang": "native: <i class=\"em em-us\"></i>",
+        "img": "https://avatars0.githubusercontent.com/u/10749061"
   }
+  ,{
+        "lat": 30.675493, 
+        "lng": 76.720452, 
+        "title": "@Trion129", 
+        "name": "Parminder Singh", 
+        "fullText": "Memester coder!", 
+        "lang": "native: English, Hindi",
+        "img": "https://avatars2.githubusercontent.com/u/8445249?s=460&v=4"
+    }
 ]
